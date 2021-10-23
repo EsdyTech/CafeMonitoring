@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ShutDownRestartLockLogOff.exe" version="1.0.0.0" publicKeyToken="f6b28beb5043745a" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ShutDownRestartLockLogOff" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="ShutDownRestartLockLogOff.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="5225168">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nCD7KthqdgsMauvZMByQCYkdAq4UcgqTkmwLU1uK0Js=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.SqlServer.dll" size="622288">
+      <assemblyIdentity name="EntityFramework.SqlServer" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4OEmw7inupUB0D+Z1Upcu9F0vOy2FwCYq0zBIZ8n+TM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShutDownRestartLockLogOff.exe" size="396240">
+      <assemblyIdentity name="ShutDownRestartLockLogOff" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lXi5kBxDL6VRDsWIeZRVzbFbGToDDT4RhBqSdnLEkeA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Model1.Context.tt" size="22930">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iH6jRm/ArXOO/wVogKb8ZOaRJ6DvCC6vOswudwQkDnQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model1.tt" size="25275">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CabSpKm6yYNT6twBZzKHKM3v3aBYMgNzK0uSDYpHoWw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ShutDownRestartLockLogOff.exe.config" size="1637">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OlRdW08xfO61wg6ZouH62snlVzWGVZk0JG3ceskij3E=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=FIDELITYBANK\P8623" issuerKeyHash="37f20b2f629e97c845b0a72156bd04b03dbf05c1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ylUOUEd/YSGBRXd3N6wK92KuYIKHZACw8h3Efps7/Hw=</DigestValue></Reference></SignedInfo><SignatureValue>OOn7aNoYX4BlkMXQjwsSAStLIXH7uASGxOGONLnVXFjsSn4ihAvdARnJ+ODLzM3AwP9CK4jD0aZCYjV4LtcK/As15dDDhOLGj8TG9v4/aE45npJY8lh5c4jwoUaqizlXbIdDLuz1okbBOE1g44bIfBZTpPuZhxnw6zsuPm3X8qM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>nCupcCek9IjIla9jVLJHMwlFkeK/Ip0VEWO+Q9vF7HG1II6lDfxrpxoMlV7I20tpmUvcmU+oBNkzT922T7HMPtloA+7xmf1SEWwcKNjT+1MT+hB6UnPDZijnDYa4Dh6o25k2YGh2BQmYm/8fRNl7W1D9dvNJT5U+lRwp46PyP+U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7cfc3b9b7ec41df2b00064878260ae62f70aac377777458121617f47500e55ca" Description="" Url=""><as:assemblyIdentity name="ShutDownRestartLockLogOff.exe" version="1.0.0.0" publicKeyToken="f6b28beb5043745a" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=FIDELITYBANK\P8623</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>M5n57DwBN4sDuy41KM5IF/hDjpixpxe7D6nTCzg8Z/k=</DigestValue></Reference></SignedInfo><SignatureValue>Zf0BpQhRskFwFAq0/YmtqkNsIxXzQrT+Wc/wPafrQ7S3Y1bQ/pkN6YlUzk2OlqCwCOdcSw3sBFMJb34LlZjOk3kk8NhTnZ/WUQPhO/vsj6F1qwhp/HTz24UD3jhzXNAxHSHU+WWb+I+/OMdZZE0gsIeB3bjsLMsUseKJmtQbjbE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>nCupcCek9IjIla9jVLJHMwlFkeK/Ip0VEWO+Q9vF7HG1II6lDfxrpxoMlV7I20tpmUvcmU+oBNkzT922T7HMPtloA+7xmf1SEWwcKNjT+1MT+hB6UnPDZijnDYa4Dh6o25k2YGh2BQmYm/8fRNl7W1D9dvNJT5U+lRwp46PyP+U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQXNXpxnDMqrtFZ8Xj0lhZrzANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQARgBJAEQARQBMAEkAVABZAEIAQQBOAEsAXABQADgANgAyADMwHhcNMjExMDIzMTkyMzA4WhcNMjIxMDI0MDEyMzA4WjAvMS0wKwYDVQQDHiQARgBJAEQARQBMAEkAVABZAEIAQQBOAEsAXABQADgANgAyADMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJwrqXAnpPSIyJWvY1SyRzMJRZHivyKdFRFjvkPbxexxtSCOpQ38a6caDJVeyNtLaZlL3JlPqATZM0/dtk+xzD7ZaAPu8Zn9UhFsHCjY0/tTE/oQelJzw2Yo5w2GuA4eqNuZNmBodgUJmJv/H0TZe1tQ/XbzSU+VPpUcKeOj8j/lAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAAHYmm/uQsJAdptFY6CMWIy/EqZ+CYSG/k3x+2xeLJVAsD4h6EcsJrUFhizqJ08vB+DKzTkKQQt1KaJzJCB1WycCuPLW84o1Kq2rUIXPG9LQHRmpzm5a54nhl9VdOq2lbtYwlrBfF95CxYfO/pHw+kJIwe1DUNbU/qPUJK2yTjPw=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
